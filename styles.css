@@ -1211,6 +1211,12 @@ p {
   margin-top: 1.5rem;
 }
 
+@media (max-width: 768px) {
+  .social-links {
+    justify-content: center;
+  }
+}
+
 .social-links a {
   color: var(--text-body);
   display: flex;
@@ -1309,6 +1315,7 @@ p {
     width: 100%;
     background: white;
     flex-direction: column;
+    align-items: center;
     padding: 2rem;
     box-shadow: var(--shadow-lg);
     gap: 1.5rem;
@@ -1330,9 +1337,31 @@ p {
     text-align: center;
   }
 
+  .footer-brand {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
   .footer-links ul {
     display: flex;
     flex-direction: column;
     align-items: center;
+  }
+}
+
+@media (max-width: 768px) {
+
+  /* Hamburger Menu Animation */
+  .menu-toggle.active .bar:nth-child(1) {
+    transform: translateY(9px) rotate(45deg);
+  }
+
+  .menu-toggle.active .bar:nth-child(2) {
+    opacity: 0;
+  }
+
+  .menu-toggle.active .bar:nth-child(3) {
+    transform: translateY(-9px) rotate(-45deg);
   }
 }
